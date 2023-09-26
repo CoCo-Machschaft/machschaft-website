@@ -2,24 +2,24 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: '6f0b4c7e438644dcb2edd6f1e16e73f5',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Fachschaft Code & Context',
+  domain: 'coco-machschaft.de',
+  author: 'Fachschaft Code & Context',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Website der Fachschaft Code & Context',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  // twitter: 'transitive_bs',
+  github: 'CoCo-Machschaft',
+  linkedin: 'company/98169914',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -50,16 +50,32 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'Home',
+      pageId: '6f0b4c7e438644dcb2edd6f1e16e73f5'
+    },
+    {
+      title: 'Council',
+      pageId: '2ebd06e302fb4e779bb7e27a71775ec6'
+    },
+    {
+      title: 'Links',
+      pageId: 'dabd33be8a754e1a9b215ec6de9242e1'
+    },
+    {
+      title: 'F.A.Q.',
+      pageId: 'c97700c0716949bb98665a8862c1b7dc'
+    },
+    {
+      title: 'Imprint',
+      pageId: '7292c61f69634bd8ae805876ce2661e3'
+    },
+    {
+      title: 'Privacy',
+      pageId: '6dabe3a2a684412da820fed354fb8bda'
+    }
+  ]
 })
